@@ -1,5 +1,6 @@
 #cf.Objective 2014
-## Digging Into The Developer Toolbox - Work Smarter, Not Harder
+## Digging Into The Developer Toolbox
+### Work Smarter, Not Harder
 =======
 Every developer has their basic tools - a robust IDE, source control and a good bug tracker.
 
