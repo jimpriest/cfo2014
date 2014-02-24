@@ -1,0 +1,22 @@
+Digging Into The Developer Toolbox - Get Lazy: Automate!
+
+Every developer has their basic toolset - a robust IDE, source control and a good bug tracker.
+
+But what else is in your toolbox?  In this presentation I'll explore some additional tools that can increase your productivity and allow you to concentrate on developing applications.  Some of the tools we will explore include:
+
+DOS - Been around forever but how many people actually use it? We'll explore some batch script basics!
+
+Keyboard Launchers - clean up that messy desktop and stop hunting for icons!
+
+Virtual desktops - Now that your desktop is clean - organize your applications into task focused areas.
+
+Cron - replace the unreliable Windows Scheduled task with a simple to use task scheduler.
+
+Clipboard managers - quit typing the same things over and over. A clipboard manager can keep a long running history of what you type so you don't have to.
+
+Autohotkey - save time and type less! Autohotkey can do simple text replacements and well as complex GUIs!
+
+Ant - if we are talking about automation we have to talk about Ant!  We'll explore how to quickly get up and running with Ant and demonstrate some basics.
+
+All of these tools are free, most are open-source and for the most part have similar equivalents available on all three platforms - Windows, Mac and Linux. In this presentation we will focus on Windows.
+

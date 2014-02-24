@@ -1,0 +1,30 @@
+New autohotkey shortcuts  (writeDump(), abort, ???)
+
+Check about:config for closing Moz tabs with keypress if PDF loaded
+
+Mouser eclipse plugin - install!
+
+Verify LastPass profiles for forms - cfObjective registration form? other example?
+
+Setup AHK shortcuts for virtual desktops or use other keystrokes?
+
+Verify wireless pointer is working correctly
+
+FARR plugin examples - map? RTM? others?  listfarr...
+
+Setup TASKER speaking reminders for 40-50 min... check shedule for start times? 
+
+download ant, xmind
+
+Win7 Scheduled tasks
+Examples: 
+* Daily svn update
+* Browser action
+* Ant task
+* Batch file
+
+Dropbox
+Android Tasker (mac alternatives)
+
+Launcher - new alternatives
+
