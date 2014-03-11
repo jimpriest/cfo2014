@@ -26,6 +26,8 @@ You know about the command line (you don't need to be an expert!) and can edit s
 
 All of the tools I'll be demonstrating are free, most are open-source and all have similar equivalents available on all three platforms: Windows, Mac and Linux. I will be providing a list of resources for all platforms in my presentation handout which will be available online after my presentation.
 
+Check out the [wiki](https://github.com/jimpriest/cfo2014/wiki) for more information!
+
 
 ## Legal Stuff
 This project contains notes, code examples and PDFs for my 2014 cf.Objective presentation.
