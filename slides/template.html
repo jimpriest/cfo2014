@@ -5,7 +5,13 @@ Authors: Eric Bidelman <ebidel@gmail.com>
          Luke Mahé <lukem@google.com>
 
 URL: https://code.google.com/p/io-2012-slides
+=================================================================
+TODO:
+- fix so fonts work without net access!
+- Type More or Type Less - make this consistent? 
+- Remove left margin on code blocks
 -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,10 +53,30 @@ URL: https://code.google.com/p/io-2012-slides
       <h2 class="white">CFLunch</h2>
       <p class="white">I like motorcycles.</p>
     </hgroup>
+    <aside class="note">
+      <section>
+        <p><b>About Me</b></p>
+        <ul>
+          <li>Who am I and why am I so lazy</li>
+          <li>NCDevCon 2014 - date?</li>
+        </ul>
+      </section>
+    </aside>
   </slide>
 
   <slide class="title-slide segue fill nobackground" style="background-image: url(images/back-movie.png)">
     <footer class="source white">source: flickr.com/photos/toasty/1125019024</footer>
+    <aside class="note">
+      <section>
+        <p><b>Presentation Overview</b></p>
+        <ul>
+          <li>Type less (or more) using bash files and keyword expanders like AutoHotkey</li>
+          <li>Work smarter - using tools like clipboard</li>
+          <li>Launchers - like FARR, Alfred</li>
+          <li>Virtual Desktops</li>
+        </ul>
+      </section>
+    </aside>
   </slide>
 
   <slide class="title-slide segue fill nobackground" style="background-image: url(images/back-automate.png)">
@@ -65,6 +91,16 @@ URL: https://code.google.com/p/io-2012-slides
         To convert to largely automatic operation
       </pre>
     </article>
+    <aside class="note">
+      <section>
+        <p><b>Automate</b></p>
+        <ul>
+          <li>Why automate?</li>
+          <li>We are constantly improving code, processes, hardware, etc.  but rarely improve yourself</li>
+          <li>It’s not what we are automating... But who!</li>
+        </ul>
+      </section>
+    </aside>
     <footer class="source white">source: flickr.com/photos/20858368@N00/105497713</footer>
   </slide>
 
@@ -76,6 +112,19 @@ URL: https://code.google.com/p/io-2012-slides
         <li><h1>Re-Evaluate</h1></li>
       </ol>
     </hgroup>
+    <aside class="note">
+      <section>
+        <p><b>Three R's</b></p>
+        <ul>
+          <li>Learning new things is hard!!!!!!</li>
+          <li>IDE switch (ColdFusion Builder anyone????), new programming languages, etc. are all things we struggle to learn as developers</li>
+          <li>Training ourselves take a lot of work…</li>
+          <li>Repetition – it’s not fun but we know if we do things over and over again it will be drilled into our brains</li>
+          <li>Resolution – stick with it! Sometimes learning new techniques is difficult! But the payouts at the and will be rewarding!</li>
+          <li>Re-evaluate – constantly reevaluate your tools and techniques.  There is always something new out there!</li>
+        </ul>
+      </section>
+    </aside>
     <footer class="source black">source: http://junk-fest.blogspot.com/2009/08/junk-fest-its-all-about-three-rs.html</footer>
   </slide>
 
@@ -84,6 +133,16 @@ URL: https://code.google.com/p/io-2012-slides
       <h1 class="white">"Lost time is never found again."</h1>
       <h3 class="white">~ Benjamin Franklin</h3>
     </hgroup>
+    <aside class="note">
+      <section>
+        <p><b>Main reason to automate?</b></p>
+        <ul>
+          <li>Saving time!</li>
+          <li>Did you walk here today? Why not?</li>
+          <li>If you do something x1 automate it!</li>
+        </ul>
+      </section>
+    </aside>
     <footer class="source white">source: flickr.com/photos/cmiked/4252428207</footer>
   </slide>
 
@@ -96,28 +155,177 @@ URL: https://code.google.com/p/io-2012-slides
         <li><h1 class="black">Each Year = 4 Hours</h1></li>
       </ol>
     </hgroup>
+    <aside class="note">
+      <section>
+        <p><b>Time Clock</b></p>
+        <ul>
+          <li>How many of these small repetitive tasks do you do every day??</li>
+          <li>cfdump/cfabort</li>
+          <li>new functions</li>
+          <li>comments</li>
+          <li>type the same thing you did yesterday from scratch (clipboard)</li>
+        </ul>
+      </section>
+    </aside>
     <footer class="source black">source: http://junk-fest.blogspot.com/2009/08/junk-fest-its-all-about-three-rs.html</footer>
   </slide>
-
 
   <slide class="title-slide segue fill nobackground" style="background-image: url(images/back-clipboard.png)">
     <hgroup>
       <h1 class="white">Clipboard</h1>
     </hgroup>
+    <aside class="note">
+      <section>
+        <p><b>Clipboard</b></p>
+        <ul>
+          <li>Demo 'normal' clipboard - limitations</li>
+          <li>Demo clipboard utility</li>
+        </ul>
+      </section>
+    </aside>
     <footer class="source white">source: flickr / John McNab</footer>
   </slide>
 
   <slide class="title-slide segue fill nobackground" style="background-image: url(images/back-sleeping.png)">
     <hgroup>
-      <h1 class="white">Type Less</h1>
+      <h1 class="white">Type More</h1>
     </hgroup>
+    <aside class="note">
+      <section>
+        <p><b>Type More</b></p>
+        <ul>
+          <li>Where do we spend most of our day</li>
+          <li>Mouse is evil!  Typing = keyboard.  </li>
+          <li>Taking your hands away from the keyboard = what?  Lost time!</li>
+        </ul>
+      </section>
+    </aside>
     <footer class="source white">source: flickr / delgrosso</footer>
   </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Type More</h2>
+      <h3>By Typing Less</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="text">
+        &lt;cfdump var="someValue"&gt;
+        &lt;cfabort /&gt;
+      </pre>
+    </article>
+    <aside class="note">
+      <section>
+        <p><b>Type More</b></p>
+        <ul>
+          <li>How many times do you type this a day?</li>
+          <li>Ever forget one in your code?</li>
+          <li>Did you know there were more attributes?</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Type More</h2>
+      <h3>By Typing Less</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint">
+        &lt;cfdump var="someValue" 
+          <b>caption="Something Descriptive"
+          top="10"</b>
+          abort="true"
+          <b>format="html"</b>&gt;
+      </pre>
+    </article>
+    <aside class="note">
+      <section>
+        <p><b>Title</b></p>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Type More</h2>
+      <h3>By Typing Less</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint">
+        <b>&lt;--- CFDUMP: Debugging ---&gt;</b>
+        &lt;cfdump var="someValue" 
+          <b>caption="Something Descriptive"
+          top="10"</b>
+          abort="true"
+          <b>format="html"</b>&gt;
+      </pre>
+    </article>
+    <aside class="note">
+      <section>
+        <p><b></b></p>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Type More</h2>
+      <h3>Git Shortcuts - .bash_profile</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint">
+        alias project1="cd /c/inetpub/wwwroot/project1"
+        alias project2="cd /c/inetpub/wwwroot/project2"
+        alias project3="cd /c/inetpub/wwwroot/adobe/project3"
+        alias project4="cd /c/inetpub/wwwroot/railo/project4"
+      </pre>
+    </article>
+    <aside class="note">
+      <section>
+        <p><b></b></p>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+
+
+
+
+
+
 
   <slide class="title-slide segue fill nobackground" style="background-image: url(images/back-organized.png)">
     <hgroup>
       <h1 class="white">Get Organized</h1>
     </hgroup>
+    <aside class="note">
+      <section>
+        <p><b>Get Organized</b></p>
+        <ul>
+          <li>Multiple Monitors</li>
+          <li>WindowPad / Multiple Monitors</li>
+          <li>Docks, Etc</li>
+          <li>Launchers</li>
+        </ul>
+      </section>
+    </aside>
     <footer class="source white">source: flickr / geekstinkbreath</footer>
   </slide>
 
@@ -125,22 +333,61 @@ URL: https://code.google.com/p/io-2012-slides
     <hgroup>
       <h1 class="white">Look Familiar?</h1>
     </hgroup>
+    <aside class="note">
+      <section>
+        <p><b>Launchers</b></p>
+        <ul>
+          <li>Windows Start / Ubuntu Start</li>
+          <li>Launcher Apps </li>
+          <li>Alfred</li>
+          <li>Extras that apps do? Examples?? </li>
+        </ul>
+      </section>
+    </aside>
   </slide>
 
   <slide class="title-slide segue fill nobackground" style="background-image: url(images/back-virtualdesktop.png)">
     <hgroup>
       <h1 class="white">Virtual Desktops</h1>
     </hgroup>
+    <aside class="note">
+      <section>
+        <p><b>Virtual Desktops</b></p>
+        <ul>
+          <li>Dexpot / VirtuaWin / Linux / Mac</li>
+          <li>Works even better with Multiple Monitors</li>
+          <li>Segment tasks by window groups</li>
+        </ul>
+      </section>
+    </aside>
     <footer class="source white">source: flickr / Jose C Silva</footer>
   </slide>
+
+
 
   <slide class="title-slide segue fill nobackground" style="background-image: url(images/back-box.png)">
     <hgroup>
       <h1 class="white">Think Outside The Box</h1>
     </hgroup>
+    <aside class="note">
+      <section>
+        <p><b>Think Outside The Box</b></p>
+        <ul>
+          <li>How can we leverage the tools WE ALREADY KNOW to do different things.</li>
+          <li>We are all creative programmers!!</li>
+          <li>IFTTT examples?</li>
+          <li>ColdFusion + Selenium Spam Cleanup</li>
+          <li>Others?</li>
+        </ul>
+      </section>
+    </aside>
     <footer class="source white">source: flickr / Earl - What I Saw 2.0</footer>
   </slide>
 
+
+<!-- ============================================================= -->
+<!-- ================== end of my slides ========================= -->
+<!-- ============================================================= -->
 
   <slide>
     <hgroup>
@@ -314,124 +561,7 @@ function helloWorld(world) {
       <footer class="source">source: place source info here</footer>
     </article>
   </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Table Option A</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Table Option A (Smaller Text)</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article class="smaller">
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Table Option B</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <table class="rows">
-        <tr>
-          <th>Header 1</th><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 2</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 3</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 4</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 5</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide Styles</h2>
-    </hgroup>
-    <article class="smaller">
-      <div class="columns-2">
-        <ul>
-          <li class="red">class="red"</li>
-          <li class="red2">class="red2"</li>
-          <li class="red3">class="red3"</li>
-          <li class="blue">class="blue"</li>
-          <li class="blue2">class="blue2"</li>
-          <li class="blue3">class="blue3"</li>
-          <li class="green">class="green"</li>
-          <li class="green2">class="green2"</li>
-        </ul>
-        <ul>
-          <li class="green3">class="green3"</li>
-          <li class="yellow">class="yellow"</li>
-          <li class="yellow2">class="yellow2"</li>
-          <li class="yellow3">class="yellow3"</li>
-          <li class="gray">class="gray"</li>
-          <li class="gray2">class="gray2"</li>
-          <li class="gray3">class="gray3"</li>
-          <li class="gray4">class="gray4"</li>
-        </ul>
-      </div>
-      <div class="centered" style="margin-top:2em">
-        I am centered text with a <button>Button</button> and <button disabled>Disabled</button> button.
-      </div>
-    </article>
-  </slide>
-
+  
   <slide class="segue dark nobackground">
     <aside class="gdbar"><img src="images/toolbox_128.png"></aside>
     <hgroup class="auto-fadein">
@@ -440,30 +570,9 @@ function helloWorld(world) {
     </hgroup>
   </slide>
 
-  <slide class="fill nobackground" style="background-image: url(images/sky.jpg)">
-    <hgroup>
-      <h2 class="white">Full Image (with Optional Header)</h2>
-    </hgroup>
-    <footer class="source white">www.flickr.com/photos/25797459@N06/5438799763/</footer>
-  </slide>
-
-  <slide class="segue dark quote nobackground">
-    <aside class="gdbar right bottom"><img src="images/toolbox_128.png"></aside>
-    <article class="flexbox vleft auto-fadein">
-      <q>
-        This is an example of quote text.
-      </q>
-      <div class="author">
-        Name<br>
-        Company
-      </div>
-    </article>
-  </slide>
-
   <slide class="title-slide segue fill nobackground" style="background-image: url(images/back-questions.png)">
     <footer class="source white">source: Flickr / Mykl Roventine</footer>
   </slide>
-
 
   <slide class="thank-you-slide segue nobackground">
     <aside class="gdbar right"><img src="images/toolbox_128.png"></aside>
