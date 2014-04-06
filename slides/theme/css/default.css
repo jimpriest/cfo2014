@@ -1152,6 +1152,7 @@ article.smaller q:before, article.smaller q:after {
 
 .segue h1 {
   font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  font-weight: normal;
 }
 
 .segue h2 {

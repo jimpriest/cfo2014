@@ -415,11 +415,6 @@ TODO:
     </aside>
   </slide>
 
-
-
-
-
-
   <slide>
     <hgroup>
       <h2>Type More</h2>
@@ -476,7 +471,7 @@ TODO:
     </hgroup>
     <article>
       <pre class="prettyprint">
-        <b>&lt;--- CFDUMP: Debugging ---&gt;</b>
+        <b>&lt;--- CFDUMP: 4/6/2014 - Jim Priest - priest@thecrumb.com ---&gt;</b>
         &lt;cfdump var="someValue" 
           <b>caption="Something Descriptive"
           top="10"</b>
@@ -495,6 +490,47 @@ TODO:
       </section>
     </aside>
   </slide>
+
+
+
+
+  <slide>
+    <hgroup>
+      <h2>Type More</h2>
+      <h3>By Typing Less</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint">
+      ;-- Wrap selected text in CFDump --
+      F1::
+        clipboard =
+        send ^c
+        clipwait, 1
+        If ErrorLevel = 0
+        {
+          clipboard = &lt;!--- CFDUMP: Debugging ---&gt;`n<cfdump var="#%clipboard%#" label="Dump ( %clipboard% )" abort="true" format="html">`n
+          send ^v
+        }
+      return
+      </pre>
+    </article>
+    <aside class="note">
+      <section>
+        <p><b></b></p>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+
+
+
+  
+
 
   <slide>
     <hgroup>
@@ -580,6 +616,45 @@ TODO:
     <footer class="source white">source: flickr / Jose C Silva</footer>
   </slide>
 
+  <slide class="title-slide segue fill nobackground" style="background-image: url(images/back-phone.png)">
+    <hgroup>
+      <h1 class="black">Quick Tip: Don't Forget Your Phone</h1>
+    </hgroup>
+    <aside class="note">
+      <section>
+        <p><b>Quicky</b></p>
+        <ul>
+          <li>Lots of good apps for phone</li>
+          <li>See my resources for links</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide class="title-slide segue fill nobackground" style="background-image: url(images/back-phone2.png)">
+    <hgroup>
+      <ol class="build">
+        <li><h1 class="black">APPLICATION</h1></li>
+        <li><h1 class="black">DAY / TIME</h1></li>
+        <li><h1 class="black">EVENT</h1></li>
+        <li><h1 class="black">LOCATION</h1></li>
+        <li><h1 class="black">STATE</h1></li>
+      </ol>
+    </hgroup>
+    <aside class="note">
+      <section>
+        <p><b>Time Clock</b></p>
+        <ul>
+          <li>How many of these small repetitive tasks do you do every day??</li>
+          <li>cfdump/cfabort</li>
+          <li>new functions</li>
+          <li>comments</li>
+          <li>type the same thing you did yesterday from scratch (clipboard)</li>
+        </ul>
+      </section>
+    </aside>
+    <footer class="source black">source: pieter ouwerkerk</footer>
+  </slide>
 
 
   <slide class="title-slide segue fill nobackground" style="background-image: url(images/back-box.png)">
