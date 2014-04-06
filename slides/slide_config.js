@@ -13,11 +13,11 @@ var SLIDE_CONFIG = {
     enableTouch: false, // Default: true. If touch support should enabled. Note: the device must support touch.
     //analytics: 'UA-XXXXXXXX-1', // TODO: Using this breaks GA for some reason (probably requirejs). Update your tracking code in template.html instead.
     favIcon: 'images/google_developers_logo_tiny.png',
-    fonts: [
-      'Open Sans:regular,semibold,italic,italicsemibold',
-      'Source Code Pro',
-      'Yanone Kaffeesatz'
-    ],
+    // fonts: [
+    //   'Open Sans:regular,semibold,italic,italicsemibold',
+    //   'Source Code Pro',
+    //   'Yanone Kaffeesatz'
+    // ],
   },
 
   // Author information
