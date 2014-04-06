@@ -186,6 +186,21 @@ TODO:
     <footer class="source white">source: flickr / John McNab</footer>
   </slide>
 
+  <slide class="title-slide segue fill nobackground" style="background-image: url(images/back-bios.png)">
+    <hgroup>
+      <h1 class="black">Quick Tip: Start Up</h1>
+    </hgroup>
+    <aside class="note">
+      <section>
+        <p><b>Quicky</b></p>
+        <ul>
+          <li>Start your computer via bios</li>
+          <li>Power saving</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
   <slide class="title-slide segue fill nobackground" style="background-image: url(images/back-sleeping.png)">
     <hgroup>
       <h1 class="white">Type More</h1>
@@ -202,6 +217,208 @@ TODO:
     </aside>
     <footer class="source white">source: flickr / delgrosso</footer>
   </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Type More</h2>
+      <h3>Ye Old Batch File</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="text">
+      net stop "RAILO"
+      net start "RAILO"
+      </pre>
+    </article>
+    <aside class="note">
+      <section>
+        <p><b>Type More</b></p>
+        <ul>
+          <li>Batch files save typing!</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Type More</h2>
+      <h3>Ye Old Batch File (or shell script)</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="text">
+      service apache2 stop 
+      service mysql stop 
+      /opt/coldfusion10/cfusion/bin/coldfusion stop
+      </pre>
+    </article>
+    <aside class="note">
+      <section>
+        <p><b>Type More</b></p>
+        <ul>
+          <li>Simple example of a shell script you'd run on Linux/Mac</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Type More</h2>
+      <h3>Ye Old Batch File (or shell script)</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="text">
+      <b>net stop "W3SVC"</b>
+      <b>net stop "MSSQLSERVER"</b>
+      <b>net stop "ColdFusion 9 Application Server"</b>
+      <b>net stop "JIRA"</b>
+      net stop "RAILO"
+
+      <b>net start "W3SVC"</b>
+      <b>net start "MSSQLSERVER"</b>
+      net start "RAILO"
+      </pre>
+    </article>
+    <aside class="note">
+      <section>
+        <p><b>Type More</b></p>
+        <ul>
+          <li>You probably have more than one service.</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Type More</h2>
+      <h3>Shut Down</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="text">
+      # Uses psshutdown from SysInternals (now Microsoft)
+
+      PsShutdown.exe -o -f -k  (Windows)
+      </pre>
+    </article>
+    <aside class="note">
+      <section>
+        <p><b>Type More</b></p>
+        <ul>
+          <li>You are probably still thinking about the power on slide?</li>
+          <li>Don't worry about links - will all be on wiki</li>
+          <li>shutdown -P now for Linux</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>cron</h2>
+      <h3>Lets Automate Something</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="text">
+      # Classic crontab format:
+      # Minutes Hours Days Months DayOfWeek Command
+      # Update local schema with prd data
+      0 5 * * 1-5 ant -f C:\ant\db.build.xml copy-prd-to-local
+      </pre>
+    </article>
+    <aside class="note">
+      <section>
+        <p><b>Type More</b></p>
+        <ul>
+          <li>Cron for Windows</li>
+          <li>Common syntax</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>cron</h2>
+      <h3>0 * * 5... WTF</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="text">
+      0 5 * * 1-5 ant -f C:\ant\db.build.xml copy-prd-to-local
+
+      # Minutes Hours Days Months DayOfWeek Command
+      0 = minute (0-59)
+      5 = hour (0-23)
+      * = day of the month (1-31)
+      * = month of the year (1-12)
+      1-5 = day of the week (0-6 with 0=Sunday)
+      </pre>
+    </article>
+    <aside class="note">
+      <section>
+        <p><b>Type More</b></p>
+        <ul>
+          <li>Explain parameters</li>
+          <li>Tons of examples online!!</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>cron</h2>
+      <h3>Real World Example</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="text">
+      # Minutes Hours Days Months DayOfWeek Command
+
+      # Shutdown my computer at 10pm every weeknight
+      0 22 * * 1-5 PsShutdown.exe -o -f -k
+
+      # Run garbage collection on my git repos on first of month
+      0 8 1 * * D:\Dropbox\scripts\cron\git-gc.bat
+      </pre>
+    </article>
+    <aside class="note">
+      <section>
+        <p><b>Type More</b></p>
+        <ul>
+          <li>Explain parameters</li>
+          <li>Tons of examples online!!</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Type More</h2>
+      <h3>By Typing Less</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="text">
+        &lt;cfdump var="someValue"&gt;
+        &lt;cfabort /&gt;
+      </pre>
+    </article>
+    <aside class="note">
+      <section>
+        <p><b>Type More</b></p>
+        <ul>
+          <li>How many times do you type this a day?</li>
+          <li>Ever forget one in your code?</li>
+          <li>Did you know there were more attributes?</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+
+
+
+
 
   <slide>
     <hgroup>
