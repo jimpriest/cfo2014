@@ -916,7 +916,7 @@ article.smaller q:before, article.smaller q:after {
   -moz-box-shadow: 0 0 10px #797979;
   box-shadow: 0 0 10px #797979;
   width: 60%;
-  padding: 2em;
+  padding: 1em;
 }
 
 
