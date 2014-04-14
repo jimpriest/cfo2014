@@ -1,30 +1,26 @@
-New autohotkey shortcuts  (writeDump(), abort, ???)
+cfObjective 2014 Notes
+=====================================================
+TODO
+* Verify wireless pointer is working correctly 
 
-Check about:config for closing Moz tabs with keypress if PDF loaded
+Presentation
+* New autohotkey shortcuts for cfScript  (writeDump(), abort, ???)
+* Use mouse software to assign keys - http://www.highrez.co.uk/downloads/XMouseButtonControl.htm
+* Verify LastPass profiles for forms - cfObjective registration form? other example?
+* Launchers: 
+* FARR plugin examples - map? RTM? others?  listfarr...
+* Kitt - Mac examples?
+* Linux - Ubuntu lens?
 
-Mouser eclipse plugin - install!
+Mobile
+* Setup TASKER speaking reminders for 40-50 min... check shedule for start times? 
 
-Verify LastPass profiles for forms - cfObjective registration form? other example?
+Cron Examples: 
+* Daily git update
+* Batch files
 
-Setup AHK shortcuts for virtual desktops or use other keystrokes?
-
-Verify wireless pointer is working correctly
-
-FARR plugin examples - map? RTM? others?  listfarr...
-
-Setup TASKER speaking reminders for 40-50 min... check shedule for start times? 
-
-download ant, xmind
-
-Win7 Scheduled tasks
-Examples: 
-* Daily svn update
-* Browser action
-* Ant task
-* Batch file
-
-Dropbox
-Android Tasker (mac alternatives)
-
-Launcher - new alternatives
+Other
+* Dropbox (printing vbs hack)
+* Android Tasker (mac alternatives)
+* Launcher - new alternatives
 
