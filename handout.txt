@@ -1,6 +1,0 @@
-Examples
-* Using ColdFusion and Selenium to combat Trac spam
-* Using CRON to restart services on scheduled basis
-* Using PC Bios to start your computer every morning
-* Using Ant to sync files between two servers (selectors)
-* Using batch files to start and restart CF services
