@@ -27,7 +27,7 @@ var SLIDE_CONFIG = {
     gplus: '',
     twitter: '@thecrumb',
     www: 'http://thecrumb.com',
-    github: 'http://github.com/jimpriest'
+    github: 'https://github.com/jimpriest/cfo2014/wiki'
   }]
 };
 
