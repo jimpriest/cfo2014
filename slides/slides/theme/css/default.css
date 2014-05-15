@@ -430,7 +430,7 @@ h2 {
   font-size: 45px;
   line-height: 45px;
   letter-spacing: -2px;
-  color: #515151;
+  color: #white;
 }
 
 
@@ -502,7 +502,7 @@ pre {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  
+
 }
 
 pre[data-lang]:after {
@@ -818,25 +818,25 @@ article.smaller q:before, article.smaller q:after {
 
 .prettyprint .str,
 .prettyprint .atv {
-  
+
   color: #009f5d;
 }
 
 
 .prettyprint .kwd,
 .prettyprint .tag {
-  
+
   color: #0066cc;
 }
 
 .prettyprint .com {
-  
+
   color: #797979;
   font-style: italic;
 }
 
 .prettyprint .lit {
-  
+
   color: #7f0000;
 }
 
@@ -850,7 +850,7 @@ article.smaller q:before, article.smaller q:after {
 .prettyprint .atn,
 .prettyprint .dec,
 .prettyprint .var {
-  
+
   color: #d94d3a;
 }
 
@@ -1217,7 +1217,7 @@ aside.gdbar {
   -moz-transition: all 0.5s ease-out 0.5s;
   -o-transition: all 0.5s ease-out 0.5s;
   transition: all 0.5s ease-out 0.5s;
-  
+
 }
 
 aside.gdbar.right {
@@ -1225,7 +1225,7 @@ aside.gdbar.right {
   left: -moz-initial;
   left: initial;
   top: 254px;
-  
+
   -webkit-transform: rotateZ(180deg);
   -moz-transform: rotateZ(180deg);
   -ms-transform: rotateZ(180deg);
@@ -1268,7 +1268,7 @@ aside.gdbar img {
 
 .title-slide hgroup h2 {
   font-size: 34px;
-  color: darkgrey;
+  color: white;
   font-weight: inherit;
 }
 
